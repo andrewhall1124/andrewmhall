@@ -13,7 +13,7 @@
 			ref: '/othello'
 		},
 		{
-			name: 'Tic Tac Toe',
+			name: 'Tic-Tac-Toe',
 			ref: '/tic-tac-toe'
 		},
 		{

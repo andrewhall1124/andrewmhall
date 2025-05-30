@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { computerMove, computerPlayers, getWinner, getDraw } from '$lib/tictactoe';
+	import { computerMove, computerPlayers, getWinner, getDraw } from '$lib/tic-tac-toe';
 
 	let side: string = $state('X');
 	let opponentSide: string = $derived(side == 'X' ? 'O' : 'X');
