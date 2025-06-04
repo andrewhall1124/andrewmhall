@@ -17,8 +17,8 @@
 			ref: '/tic-tac-toe'
 		},
 		{
-			name: 'Photos',
-			ref: '/photos'
+			name: 'Photography',
+			ref: '/photography'
 		}
 	];
 </script>
@@ -28,6 +28,6 @@
 		<a class="" href={page.ref}>{page.name}</a>
 	{/each}
 </div>
-<div class="p-4">
+<div>
 	{@render children()}
 </div>

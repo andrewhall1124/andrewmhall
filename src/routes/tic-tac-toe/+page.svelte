@@ -85,6 +85,7 @@
 		height: 100vh;
 		flex-direction: column;
 		align-items: center;
+		padding: 1rem;
 	}
 
 	.header {

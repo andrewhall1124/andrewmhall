@@ -116,7 +116,7 @@
 
 <div class="bg-white">
   {#each albums as album}
-    <div class="p-2 font-serif text-2xl text-center text-gray-600">{album.title}</div>
+    <!-- <div class="p-2 font-serif text-2xl text-center text-gray-600">{album.title}</div> -->
     <div class="sm:grid w-full sm:grid-cols-5 flex flex-col">
       {#each Object.entries(album.imageModules) as [_path, module]}
         <!-- Small Screen -->

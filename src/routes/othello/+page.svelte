@@ -175,7 +175,7 @@
   .page {
     display: flex;
     flex-direction: column;
-    /* gap: .5rem; */
+		padding: 1rem;
     align-items: start;
   }
 
