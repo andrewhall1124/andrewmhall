@@ -1,4 +1,4 @@
-const DEPTH = 5;
+const DEPTH = 4;
 
 export function getPoints(color: number, squares: (number | null)[][]): number {
     let count = 0;

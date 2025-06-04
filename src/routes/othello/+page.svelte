@@ -114,11 +114,6 @@
   ];
 
   const playerOptions = ["human", "minimax", "random"];
-  // $inspect(lastMove)
-  // $inspect(winner)
-  // $inspect(turn)
-  // $inspect(blackPlayer)
-  // $inspect(whitePlayer)
 </script>
 
 <div class="page">
