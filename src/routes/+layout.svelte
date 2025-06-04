@@ -23,11 +23,11 @@
 	];
 </script>
 
-<div class="flex gap-4 p-4">
+<div class="flex gap-4 p-4 border-b">
 	{#each pages as page}
 		<a class="" href={page.ref}>{page.name}</a>
 	{/each}
 </div>
-<div class="px-4">
+<div class="p-4">
 	{@render children()}
 </div>

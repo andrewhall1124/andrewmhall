@@ -124,7 +124,7 @@
 <div class="page">
   <div class="title">Othello</div>
   <div class="optionsContainer">
-    <div>Game Board Size</div>
+    <div>Game Board Size:</div>
     <select bind:value={gameSize} onchange={() => resetBoard()}>
       {#each gameSizeOptions as gameSizeOption}
         <option value={gameSizeOption.value}>{gameSizeOption.name}</option>
@@ -132,7 +132,7 @@
     </select>
   </div>
   <div class="optionsContainer">
-    <div>Black Player</div>
+    <div>Black Player:</div>
     <select bind:value={blackPlayer} onchange={() => resetBoard()}>
       {#each playerOptions as playerOption}
         <option value={playerOption}>{playerOption}</option>
@@ -140,19 +140,19 @@
     </select>
   </div>
   <div class="optionsContainer">
-    <div>White Player</div>
+    <div>White Player:</div>
     <select bind:value={whitePlayer} onchange={() => resetBoard()}>
       {#each playerOptions as playerOption}
         <option value={playerOption}>{playerOption}</option>
       {/each}
     </select>
   </div>
-  <button onclick={() => resetBoard()}>Reset</button>
   <div class="scoreBoard">
-    <div class="scoreBoardTitle">Score</div>
+    <div class="title">Score</div>
     <div class="score">Black: {whitePoints} {turn == 0 ? "🟢" : ""}</div>
     <div class="score">White: {blackPoints} {turn == 1 ? "🟢" : ""}</div>
   </div>
+  <button class='reset' onclick={() => resetBoard()}>Reset</button>
   <div class="boardContainer">
     <div class="board">
       {#each squares as row, i}
@@ -180,12 +180,11 @@
   .page {
     display: flex;
     flex-direction: column;
-    gap: 5px;
+    /* gap: .5rem; */
     align-items: start;
   }
 
   .title {
-    font-size: x-large;
     font-weight: bold;
   }
 
@@ -195,20 +194,12 @@
 
   .optionsContainer {
     display: flex;
-    gap: 10px;
-  }
-
-  .scoreBoardTitle {
-    font-weight: bold;
-    font-size: large;
   }
 
   .scoreBoard {
     width: 100%;
-    padding: 10px 0px 10px 0px;
     display: flex;
     flex-direction: column;
-    gap: 10px;
   }
 
   .boardContainer {
@@ -263,7 +254,8 @@
     background-color: white;
   }
 
-  .winner {
-    padding: 10px;
+  .reset {
+      color: red;
+      cursor: pointer;
   }
 </style>
