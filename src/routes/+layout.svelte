@@ -16,10 +16,6 @@
 			name: 'Tic-Tac-Toe',
 			ref: '/tic-tac-toe'
 		},
-		{
-			name: 'Photography',
-			ref: '/photography'
-		}
 	];
 </script>
 
