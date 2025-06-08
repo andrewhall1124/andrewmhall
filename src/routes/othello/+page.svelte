@@ -202,6 +202,7 @@
     flex-direction: column;
     align-items: center;
     width: 100%;
+    padding: 1rem;
   }
 
   .board {
@@ -218,8 +219,8 @@
 
   .square {
     border: 1px solid black;
-    height: 50px;
-    width: 50px;
+    height: 2.5rem;
+    width: 2.5rem;
     display: flex;
     justify-content: center;
     align-items: center;
