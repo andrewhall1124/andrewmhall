@@ -121,7 +121,7 @@ export function flipChips(squares: (number | null)[][], turn: number, move: numb
         [-1, -1], [-1, 1], [1, -1], [1, 1],
     ];
 
-    const newSquares = JSON.parse(JSON.stringify(squares));
+    // const newSquares = JSON.parse(JSON.stringify(squares));
     const chipsToFlip: number[][] = [];
 
     for (const [dr, dc] of directions) {
@@ -141,11 +141,11 @@ export function flipChips(squares: (number | null)[][], turn: number, move: numb
     }
 
     for (const [y, x] of chipsToFlip) {
-        newSquares[y][x] = turn;
+        squares[y][x] = turn;
     }
 
-    newSquares[i][j] = turn;
-    return newSquares;
+    squares[i][j] = turn;
+    return squares;
 }
 
 function randomPlayer(squares: (number | null)[][], turn: number): number[] {

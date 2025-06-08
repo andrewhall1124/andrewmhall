@@ -21,7 +21,7 @@
 
 <div class="flex gap-4 p-4 border-b">
 	{#each pages as page}
-		<a class="" href={page.ref}>{page.name}</a>
+		<a href={page.ref}>{page.name}</a>
 	{/each}
 </div>
 <div>

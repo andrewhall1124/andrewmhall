@@ -3,7 +3,7 @@
 
 	let side: string = $state('X');
 	let opponentSide: string = $derived(side == 'X' ? 'O' : 'X');
-	let type: string = $state('random');
+	let type: string = $state('minimax');
 	let squares: (null | string)[] = $state(Array(9).fill(null));
 	let turn: string = $state('X');
 
@@ -37,7 +37,7 @@
 
 <div class="page">
 	<div class="header">
-		<h1>Tic-Tac-Toe</h1>
+		<div class="title">Tic-Tac-Toe</div>
 		<div>
 			Player 1:
 			<select bind:value={side} onchange={() => reset()}>
@@ -93,9 +93,10 @@
 		flex-direction: column;
 		justify-content: space-between;
 		width: 100%;
+		gap: .5rem;
 	}
 
-	h1 {
+	.title {
 		font-weight: bold;
 	}
 
@@ -109,10 +110,14 @@
 	}
 
 	.square {
-		/* class="h-16 w-16 border border-black" */
 		height: 64px;
 		width: 64px;
 		border-color: black;
 		border-width: 1px;
+	}
+
+	button.square {
+		background-color: white;
+		color: black
 	}
 </style>
