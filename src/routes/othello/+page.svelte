@@ -149,8 +149,8 @@
 	</div>
 	<div class="scoreBoard">
 		<div class="title">Score</div>
-		<div class="score">Black: {whitePoints} {turn == 0 ? '🟢' : ''}</div>
-		<div class="score">White: {blackPoints} {turn == 1 ? '🟢' : ''}</div>
+		<div class="score">Black: {whitePoints}</div>
+		<div class="score">White: {blackPoints}</div>
 	</div>
 	<button class="reset" onclick={() => resetBoard()}>Reset</button>
 	<div class="boardContainer">
@@ -212,7 +212,6 @@
 	}
 
 	.board {
-		background-color: lightgreen;
 		display: flex;
 		flex-direction: column;
 		width: fit-content;
@@ -225,6 +224,7 @@
 
 	.square {
 		border: 1px solid black;
+		background-color: lightgreen;
 		height: 2.5rem;
 		width: 2.5rem;
 		display: flex;
