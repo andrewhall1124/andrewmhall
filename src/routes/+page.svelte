@@ -2,8 +2,8 @@
     <div>Andrew Hall</div>
 	<enhanced:img
 		class="h-24 w-24 rounded-full border"
-		src="$lib/assets/notion-face-transparent.png"
+		src="$lib/assets/evil-kermit.jpg"
 		alt="profile"
 	/>
-    <div>Just building cool stuff and having fun.</div>
+    <div>It's not easy being green.</div>
 </div>
