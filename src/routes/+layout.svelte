@@ -16,6 +16,10 @@
 			name: 'Tic-Tac-Toe',
 			ref: '/tic-tac-toe'
 		},
+		{
+			name: 'Essays',
+			ref: '/essays'
+		},
 	];
 </script>
 
