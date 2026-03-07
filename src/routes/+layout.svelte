@@ -9,12 +9,8 @@
 			ref: '/'
 		},
 		{
-			name: 'Othello',
-			ref: '/othello'
-		},
-		{
-			name: 'Tic-Tac-Toe',
-			ref: '/tic-tac-toe'
+			name: 'Games',
+			ref: '/games'
 		},
 		{
 			name: 'Essays',
