@@ -9,17 +9,21 @@
 			ref: '/'
 		},
 		{
+			name: 'Projects',
+			ref: '/projects'
+		},
+		{
 			name: 'Games',
 			ref: '/games'
 		},
 		{
 			name: 'Essays',
 			ref: '/essays'
-		},
+		}
 	];
 </script>
 
-<div class="flex gap-4 p-4 border-b">
+<div class="flex gap-4 border-b p-4">
 	{#each pages as page}
 		<a href={page.ref}>{page.name}</a>
 	{/each}
